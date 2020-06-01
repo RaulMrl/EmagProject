@@ -34,7 +34,7 @@ namespace EmagProject.Tests
             List<string> brands = new List<string>();
             brands.Add("Whirlpool");
             brands.Add("Samsung");
-            //WashMachinePage.AddWashMachines("Pret crescator", brands, 5);
+            WashMachinePage.AddWashMachines("Pret crescator", brands, 5);
             HomePage.WebDriver = WashMachinePage.WebDriver;
             HomePage.GoToMyChart();
             string filePathAndName = HomePage.TakeScreenShot();
