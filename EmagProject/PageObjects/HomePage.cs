@@ -21,14 +21,15 @@ namespace EmagProject.PageObjects
 
         public void GoToWashMachines()
         {
-            Actions action = new Actions(this.WebDriver);
-            action.MoveToElement(HouseProducts).Perform();
+            this.WebDriver.Url = "https://www.emag.ro/masini-spalat-rufe/filter/tip-incarcare-f7953,frontala-v-1732451/c?ref=hp_menu_quick-nav_267_6&type=filter";
+            //Actions action = new Actions(this.WebDriver);
+            //action.MoveToElement(HouseProducts).Perform();
 
-            WebDriverWait wait = new WebDriverWait(this.WebDriver, TimeSpan.FromSeconds(10));
+            //WebDriverWait wait = new WebDriverWait(this.WebDriver, TimeSpan.FromSeconds(10));
 
-            IWebElement WashMachineWithFrontCharge = wait.Until(ExpectedConditions.ElementIsVisible(By.LinkText("Incarcare frontala")));
+            //IWebElement WashMachineWithFrontCharge = wait.Until(ExpectedConditions.ElementIsVisible(By.LinkText("Incarcare frontala")));
 
-            action.MoveToElement(WashMachineWithFrontCharge).Click().Build().Perform();
+            //action.MoveToElement(WashMachineWithFrontCharge).Click().Build().Perform();
         }
 
         public void GoToMyChart()
